@@ -1,0 +1,16 @@
+[
+{
+  "modid": "${modid}",
+  "name": "${name}",
+  "description": "Customizable Hold Animations",
+  "version": "${version}",
+  "mcversion": "${minecraft_version}",
+  "url": "",
+  "updateUrl": "",
+  "authorList": ["ricedotwho"],
+  "credits": "ricedotwho",
+  "logoFile": "",
+  "screenshots": [],
+  "dependencies": []
+}
+]

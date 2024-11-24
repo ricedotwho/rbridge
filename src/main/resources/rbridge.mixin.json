@@ -1,0 +1,11 @@
+{
+    "required": true,
+    "minVersion": "0.6",
+    "package": "rice.rbridge.mixin",
+    "refmap": "rbridge.mixin.refmap.json",
+    "compatibilityLevel": "JAVA_8",
+    "client": [],
+    "injectors": {
+        "defaultRequire": 1
+    }
+}
