@@ -9,7 +9,6 @@ import java.util.HashMap;
 import java.util.Map;
 
 public class API {
-    public static String API_KEY = "dc6e292f-6741-4279-8130-3e0d78757a8a";
     static String MOJANG_UUID = "https://api.mojang.com/users/profiles/minecraft/";
     public static class ParameterStringBuilder {
         public static String getParamsString(Map<String, String> params)
