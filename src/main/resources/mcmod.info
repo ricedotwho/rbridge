@@ -2,7 +2,7 @@
 {
   "modid": "${modid}",
   "name": "${name}",
-  "description": "Customizable Hold Animations",
+  "description": "Server Side Bridge Mod",
   "version": "${version}",
   "mcversion": "${minecraft_version}",
   "url": "",

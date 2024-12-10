@@ -5,7 +5,6 @@ import com.google.gson.JsonObject;
 
 import java.io.*;
 import java.net.*;
-import java.util.HashMap;
 import java.util.Map;
 
 public class API {

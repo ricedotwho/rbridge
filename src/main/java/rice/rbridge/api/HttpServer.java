@@ -40,7 +40,7 @@ public class HttpServer extends NanoHTTPD {
                     JsonObject jsonCommand = toJson(messageContent);
 
                     if(!jsonCommand.has("Api-Key") || !jsonCommand.get("Api-Key").getAsString().equals(config.apiKey)) {
-                        return newFixedLengthResponse(Response.Status.OK, "application/json", "{\"error\":\"Invalid or missing Api-Key\"}");
+                        return newFixedLengthResponse(Response.Status.BAD_REQUEST, "application/json", "{\"error\":\"Invalid or missing Api-Key\"}");
                     }
 
                     if(config.logRequests) System.out.println("Received POST message: " + messageContent);
@@ -66,7 +66,7 @@ public class HttpServer extends NanoHTTPD {
                     JsonObject jsonCommand = toJson(commandContent);
 
                     if(!jsonCommand.has("Api-Key") || !jsonCommand.get("Api-Key").getAsString().equals(config.apiKey)) {
-                        return newFixedLengthResponse(Response.Status.OK, "application/json", "{\"error\":\"Invalid or missing Api-Key\"}");
+                        return newFixedLengthResponse(Response.Status.BAD_REQUEST, "application/json", "{\"error\":\"Invalid or missing Api-Key\"}");
                     }
 
                     handleCommand(jsonCommand);

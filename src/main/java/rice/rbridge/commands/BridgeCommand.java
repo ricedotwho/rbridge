@@ -75,6 +75,7 @@ public class BridgeCommand extends CommandBase {
                         sendMessageUnknown(args[0], sender);
                         return;
                     case "help":
+                        // me when /n doesnt work :sob:
                         sendMessagePrefix(GREEN + Info.MOD_NAME + " Help:", sender);
                         sendMessage("/b toggle" + GRAY + " Toggles the mod", sender);
                         sendMessage("/b webhook" + GRAY + " Toggles webhook use, will use the botURL if this is disabled", sender);
